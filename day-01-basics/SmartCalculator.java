@@ -3,6 +3,13 @@ import java.util.Scanner;
 public class SmartCalculator {
 
     public static void main(String[] args) {
+         /* Kısaca notum
+        == → referans karşılaştırır, String'lerde kullanma
+        .equals() → içerik karşılaştırır, her zaman bunu kullan
+        Koleksiyona koyacaksan Wrapper, hesaplamada primitive daha verimli
+        String'i döngüde birleştiriyorsan StringBuilder kullan
+        var tip güvenliğini bozmaz, sadece yazım kolaylığı
+        */
 
         // ✅ 1. var keyword — Java 10+, tip çıkarımı yapar
         // Derleyici sağ taraftaki değere bakarak tipi anlar
@@ -75,5 +82,6 @@ public class SmartCalculator {
         System.out.println("Is NaN?          : " + Double.isNaN(wrapperResult));
 
         scanner.close();
+
     }
 }
